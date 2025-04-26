@@ -29,12 +29,12 @@ compress() {
     echo "----- Compressing the variant -----"
     cd $ROOT_DIR/out/target/product/a55x
     xz -9 -T0 -v -z system.img
-    mv system.img.xz $HOME/Downloads/pixelos_a55x-erofs-$ANDROID_SOURCE_VERSION-unofficial-$RELEASE_DATE.img.xz
+    mv system.img.xz $HOME/Downloads/pixelos_a55x-$ANDROID_SOURCE_VERSION-unofficial-$RELEASE_DATE.img.xz
 }
 
 build() {
     cd $ROOT_DIR
-    lunch pixelos_arm64_$variant-$ANDROID_BUILD_VERSION-userdebug
+    lunch pixelos_a55x-$ANDROID_BUILD_VERSION-userdebug
     make systemimage -j$(nproc --all) || exit
     compress
 }
@@ -51,5 +51,5 @@ echo "----- Done! -----"
 echo "Start time: $START_TIME"
 echo "End time: $END_TIME"
 echo "Delta time (minutes): $DELTA_MINUTES"
-erofs_size=$(wc -c < $HOME/Downloads/pixelos_a55x-erofs-$ANDROID_SOURCE_VERSION-unofficial-$RELEASE_DATE.img.xz)
+erofs_size=$(wc -c < $HOME/Downloads/pixelos_a55x-$ANDROID_SOURCE_VERSION-unofficial-$RELEASE_DATE.img.xz)
 echo "EROFS size: $erofs_size"

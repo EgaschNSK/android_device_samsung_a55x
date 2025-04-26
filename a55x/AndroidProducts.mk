@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/pixelos.mk
+	$(LOCAL_DIR)/pixelos_a55x.mk

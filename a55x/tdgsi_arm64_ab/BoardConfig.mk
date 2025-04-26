@@ -1,5 +1,5 @@
 include build/make/target/board/generic_arm64/BoardConfig.mk
-include device/phh/treble/board-base.mk
+include device/samsung/a55x/board-base.mk
 
 ifeq ($(BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE),)
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2147483648

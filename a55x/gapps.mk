@@ -18,12 +18,12 @@ endif
 
 ifneq ($(wildcard vendor/opengapps),)
 PRODUCT_COPY_FILES += \
-	device/phh/treble/empty-permission.xml:system/etc/permissions/com.google.android.camera2.xml \
-	device/phh/treble/empty-permission.xml:system/etc/permissions/com.google.android.camera.experimental2015.xml \
-	device/phh/treble/empty-permission.xml:system/etc/permissions/com.google.android.camera.experimental2016.xml \
-	device/phh/treble/empty-permission.xml:system/etc/permissions/com.google.android.camera.experimental2017.xml
+	device/samsung/a55x/empty-permission.xml:system/etc/permissions/com.google.android.camera2.xml \
+	device/samsung/a55x/empty-permission.xml:system/etc/permissions/com.google.android.camera.experimental2015.xml \
+	device/samsung/a55x/empty-permission.xml:system/etc/permissions/com.google.android.camera.experimental2016.xml \
+	device/samsung/a55x/empty-permission.xml:system/etc/permissions/com.google.android.camera.experimental2017.xml
 
-PRODUCT_PACKAGE_OVERLAYS += device/phh/treble/overlay-gapps
+PRODUCT_PACKAGE_OVERLAYS += device/samsung/a55x/overlay-gapps
 GAPPS_VARIANT := pico
 DONT_DEXPREOPT_PREBUILTS := true
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
