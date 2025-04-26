@@ -1,0 +1,8 @@
+# SPRD IMS
+ims_ex                                               u:object_r:radio_service:s0
+ims_ut_ex                                            u:object_r:radio_service:s0
+ims_doze_manager                                     u:object_r:radio_service:s0
+irit                                                 u:object_r:radio_service:s0
+
+# Audio AIDL interface
+android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/sysbta    u:object_r:hal_audio_service:s0
