@@ -10,7 +10,7 @@ $(call inherit-product, device/samsung/a55x/device.mk)
 # Overwrite the inherited "emulator" characteristics
 PRODUCT_CHARACTERISTICS := device
 
-PRODUCT_NAME := pixelos_a55x
+PRODUCT_NAME := a55x
 PRODUCT_DEVICE := a55x
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_BRAND := samsung
